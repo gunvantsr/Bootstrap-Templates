@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/angular.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<style type="text/css">
+		.logo{
+			width: 120x;
+			height: 38px;
+		}
+		.navbar-brand{
+			padding: 10px;
+		}
+		.title{
+			padding-top: 70px;
+			font-size: 46px;
+			font-family: 'Open Sans', sans-serif;
+			color: #613CFF;
+		}
+		.main-bg{
+			background-image: url("assets/img/main-bg.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 500px;
+		}
+		.box1{
+			padding: 30px;
+			margin-top: 100px;
+			height: 300px;
+			background: rgb(54, 25, 25); /* Fall-back for browsers that don't support rgba */
+    		background: rgba(54, 25, 25, .5)
+		}
+		.h11{
+			color: #fff;
+		}
+		.btns{
+			margin-left: 40%;
+		}
+		.inside{
+			font-size: 18px;
+		}
+		.color{
+			color: #17aa1c;
+		}
+		.navbar li a:hover{
+			color: #17aa1c !important;
+		}
+		.panel {
+		    border: 1px solid #f4511e; 
+		    border-radius:0;
+		    transition: box-shadow 0.5s;
+		}
+
+		.panel:hover {
+		    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+		}
+
+		.panel-footer .btn:hover {
+		    border: 1px solid #f4511e;
+		    background-color: #fff !important;
+		    color: #f4511e;
+		}
+
+		.panel-heading {
+		    color: #fff !important;
+		    background-color: #f4511e !important;
+		    padding: 25px;
+		    border-bottom: 1px solid transparent;
+		    border-top-left-radius: 0px;
+		    border-top-right-radius: 0px;
+		    border-bottom-left-radius: 0px;
+		    border-bottom-right-radius: 0px;
+		}
+
+		.panel-footer {
+		    background-color: #fff !important;
+		}
+
+		.panel-footer h3 {
+		    font-size: 32px;
+		}
+
+		.panel-footer h4 {
+		    color: #aaa;
+		    font-size: 14px;
+		}
+
+		.panel-footer .btn {
+		    margin: 15px 0;
+		    background-color: #f4511e;
+		    color: #fff;
+		}
+		footer{
+			background-color: gray;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="logo"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#pricing">PRICING</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<div class="container-fluid main-bg">
+	<div class="box1">
+		<h1 class="text-center h11">What course will your life take?</h1>
+		<h3 class="text-center h11">Own your future by learning new skills online</h3>
+		<div class="btns">
+			<button class="btn btn-primary btn-lg">Learn More</button>
+			<button class="btn btn-primary btn-lg">Join Us</button>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="about">
+	<h1 class="text-center color">Enriching lives</h1>
+	<hr>
+	<div class="row">
+		<div class="col-sm-3 text-center">
+			<i class="fa fa-briefcase  fa-5x" aria-hidden="true"></i>
+			</br>
+			<h2>Pro-Courses</h2>
+		</div>
+
+		<div class="col-sm-3 text-center">
+			<i class="fa fa-database fa-5x" aria-hidden="true"></i>
+			</br>
+			<h2>Database</h2>
+		</div>
+		<div class="col-sm-3 text-center">
+			<i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+			</br>
+			<h2>Certification</h2>
+		</div>
+		<div class="col-sm-3 text-center">
+			<i class="fa  fa-cloud-download fa-5x" aria-hidden="true"></i>
+			</br>
+			<h2>Offline</h2>
+		</div>
+	</div>
+	<hr>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-6 img-center">
+			<img src="assets/img/boy.png" style="padding-left: 20px; height: 300px">
+		</div>
+		<div class="col-sm-6">
+			<p class="inside text-center">
+			Udemy is a global marketplace for learning and teaching online where students are mastering new skills and achieving their goals by learning from an extensive library of over 40,000 courses taught by expert instructors.
+				The inspiration for Udemy began in a small village in Turkey where our founder, Eren Bali, grew up frustrated by the limitations of being taught in a one-room school house. Teaching himself math through resources online, he learned his way to the International Math Olympiad where he earned a silver medal. Realizing the potential of learning on the internet, Eren partnered with like-minded co-founders Oktay Caglar and Gagan Biyani, and set out to make quality education more accessible so that others can change their lives, too.
+			</p>
+		</div>
+		<hr>	
+	</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid" id="pricing">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Courses</p>
+          <p><strong>15</strong> Whatever</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Users</p>
+          <p><strong>Endless</strong> Support</p>
+        </div>
+        <div class="panel-footer plan">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div> 
+    </div> 
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Courses</p>
+          <p><strong>25</strong> Whatever</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Users</p>
+          <p><strong>Endless</strong> Support</p>
+        </div>
+        <div class="panel-footer plan">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div> 
+    </div> 
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Courses</p>
+          <p><strong>50</strong> Whatever</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Users</p>
+          <p><strong>Endless</strong> Support</p>
+        </div>
+        <div class="panel-footer plan">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div> 
+    </div> 
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid bg-grey" id="contact">
+  <hr>
+  <h2 class="text-center">CONTACT</h2>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> Nanded, IN</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 7798391136</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> sarpate007@gmail.com</p>
+      <p><spanc class="glyphicon glyphicon-globe"></span> gunvant.me</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+        <br>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid" style="color: #fff;">
+	<h4 class="text-center"><a href="http://www.gunvant.me">Gunvant Sarpate</a></h4>
+	<p class="text-center">sarpate007@gmail.com</p>
+</footer>
+</body>
+</html>
